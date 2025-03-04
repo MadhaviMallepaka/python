@@ -11,7 +11,7 @@ elif num3 > num1 and num3 > num2:
 else:
     print("All three are equal numbers")
     
-# ------------------------------------------------------------------------------------------------
+
 
 # check if a year is leap or not:
 
@@ -21,7 +21,7 @@ if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0 and year % 100 == 0):
 else: 
     print(f"{year} is not a Leap Year")
 
-# ------------------------------------------------------------------------------------------------
+
 
 # grade of a student based on the marks they score:
 
@@ -37,7 +37,6 @@ elif marks < 70:
 else:
     print("Not a number")
 
-# --------------------------------------------------------------------------------------------
 
 # program to check if three sides length form a valid triangle:
 
@@ -48,3 +47,15 @@ if (a+b) > c and (b+c) > a and (a+c) > b:
     print("It will form a valid triangle")
 else:
     print("It will not form a valid triangle")
+
+ch_input=input("enter a single character") .lower()
+
+if len(ch_input)==1:
+    if ch_input in ['a','e','i','o','u']:
+        print("vowel")
+    elif ch_input.isalpha(): 
+        print("consonants")
+    else:
+        print("Neither or special character")
+else:
+    print("invalid input")
